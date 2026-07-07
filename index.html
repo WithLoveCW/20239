@@ -107,8 +107,8 @@ font-size: clamp(36px, 5.4vh, 64px);
   position: absolute;
   left: 50%;
   top: 16%;
-  width: 68%;
-  aspect-ratio: 4 / 4.5;
+  width: 66%;
+  height: 41%;
   transform: translateX(-50%);
   z-index: 5;
   overflow: hidden;
@@ -398,7 +398,7 @@ function checkScratchAmount(x, y, heartArea, scratchedCells, cellSize, totalCell
 
   const percent = scratchedCells.size / totalCells;
 
-if (percent > 0.26) {
+if (percent > 0.29) {
   scratchedEnough = true;
   fireConfetti();
   document.querySelector(".celebrate-zone").style.display = "block";
